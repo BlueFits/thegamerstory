@@ -12,7 +12,7 @@ export default function Home() {
         <LineInput />
         <div className="flex flex-col items-center" style={{ marginTop: 50 }}>
           <Button variant="contained" color="primary" size="large" style={{ backgroundColor: colors.primary, height: 50, width: 180, borderRadius: 50, marginBottom: 10 }}>Enter</Button>        
-          <Button size="large" style={{  height: 50, width: 180, borderRadius: 50, color: "#fff" }}>I don't know</Button>     
+          <Button size="large" style={{  height: 50, width: 180, borderRadius: 50, color: "#fff" }}>I dont know</Button>     
         </div>   
       </div>
     </div>
