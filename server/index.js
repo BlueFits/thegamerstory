@@ -17,7 +17,9 @@ app.prepare().then(() => {
     const app = express();
 
     //Mongoose Connection
-    const mongoDB = "mongodb+srv://christianAdmin:mongopassword@cluster0.ubkpu.mongodb.net/leanIdea?retryWrites=true&w=majority";
+    let dev_db_url = "mongodb+srv://christianAdmin:mongopassword@cluster0.ubkpu.mongodb.net/leanIdea?retryWrites=true&w=majority";
+    let mongoDB = process.env.MONGODB_URI || dev_db_url;
+
     mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true });
     const db = mongoose.connection;
 
